@@ -19,9 +19,11 @@ class calculations:
         mul = a*b
         print(mul)
 
-a = input("enter the value of A")
-b = input("enter the value of B")
-num = calculations(a,b)
-num.sum(a,b)
-num.sub(a,b)
-num.mul(a,b)
+if __name__ == '__main__':
+
+    a = input("enter the value of A")
+    b = input("enter the value of B")
+    num = calculations(a,b)
+    num.sum()
+    num.sub(a,b)
+    num.mul(a,b)

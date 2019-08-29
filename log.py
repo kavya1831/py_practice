@@ -8,8 +8,10 @@ def log(a=10):
         else:
             print("not in range")
 
-a =int(input("enter a number to get log value"))
-log(a)
+if __name__ == '__main__':
+
+    a =int(input("enter a number to get log value"))
+    log(a)
 
 
 
