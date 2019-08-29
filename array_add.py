@@ -1,8 +1,25 @@
-#list1=input("enter list 1")
-#list2=input("enter list 2")
-list1 = [1,2,3,4]
-list2 = [2,3,4,5]
-print("list1:" +str(list1))
-print("list2:" +str(list2))
-res = [list1[i] + list2[i] for i in range(len(list1))]
-print("result:"+str(res))
+def calculate(arr):
+
+    if str(type(arr))=="<type 'list'>":
+      return "array as list","xyz"
+
+    sum = 0
+    for item in arr:
+        sum+=item
+    avg=sum/n
+    return sum,avg
+
+if __name__ == '__main__':
+
+
+    n = int(input("enter the no. of elements to be entered in array"))
+    print "enter",+n ,"elements"
+    arr = []
+    for i in range(n):
+        arr.append(int(input()))
+
+    print arr
+
+    sum ,avg =calculate(arr)
+    print "sum of array elements is", sum
+    print "avg of array elements is", avg
