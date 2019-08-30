@@ -13,11 +13,11 @@ def download_image(image):
     for link in range(len(image)):
         r = requests.get(image[link])
 
-        with open("python_logo.png", 'w') as f:
+        with open("python_logo.jpeg", 'w') as f:
              f.write(r.content)
-            with open("python_logo1.png", 'w') as g:
+            with open("python_logo1.jpeg", 'w') as g:
                 g.write(r.content)
-                with open("python_logo2.png", 'w') as h:
+                with open("python_logo2.jpeg", 'w') as h:
                     h.write(r.content)
 
 if __name__ == '__main__':
