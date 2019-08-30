@@ -14,7 +14,7 @@ def download_image(image):
         r = requests.get(image[link])
 
         with open("python_logo.jpeg", 'w') as f:
-             f.write(r.content)
+            f.write(r.content)
             with open("python_logo1.jpeg", 'w') as g:
                 g.write(r.content)
                 with open("python_logo2.jpeg", 'w') as h:
